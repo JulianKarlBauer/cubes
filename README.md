@@ -4,6 +4,11 @@
 
 Play with magic cubes.
 
+Let's start with
+
+- [Python package `magiccube`](https://github.com/trincaog/magiccube)
+- [Move notation](https://ruwix.com/the-rubiks-cube/notation/)
+
 ## Python
 
 You can restore the development environment like this:
