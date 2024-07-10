@@ -45,8 +45,9 @@ print(f"cube.is_done()={cube.is_done()}")
 
 ##################
 
-print("cube.scramble()")
-cube.scramble()
+
+moves = cube.scramble(10)
+print(f"cube.scramble(10) = {moves}")
 print(cube)
 
 from magiccube.solver.basic.basic_solver import BasicSolver
