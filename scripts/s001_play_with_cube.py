@@ -38,3 +38,25 @@ print(f"cube.rotate(cube.reverse_history(to_str=True))")
 cube.rotate(cube.reverse_history())
 # cube.rotate("L' R B2 F' D U' L'2 R")
 print(cube)
+
+##################
+
+print(f"cube.is_done()={cube.is_done()}")
+
+##################
+
+print("cube.scramble()")
+cube.scramble()
+print(cube)
+
+from magiccube.solver.basic.basic_solver import BasicSolver
+
+solver = BasicSolver(cube)
+print(f"solver={solver}")
+
+actions = solver.solve()
+print(f"solver.solve() = {actions}")
+
+print(cube)
+
+assert cube.is_done()
